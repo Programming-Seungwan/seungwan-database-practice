@@ -1,3 +1,5 @@
 .venv
 
 movies.db
+
+node_modules
