@@ -69,3 +69,8 @@ conn.close()
 
 ## mongoDB
 `pymongo`라는 모듈을 따로 파이썬에서 설치하여 사용한다. 또한 mql 문법과 거의 유사하여 바로 바로 사용하면 된다.
+
+## Drizzle
+Drizzle은 typeorm, prisma와 비슷하게 데이터베이스와 상호작용을 할 수 있도록 도와주는 js 라이브러리이다. 이 중에서도 drizzle-orm을 사용하고, drizzle-kit라는 cli 툴을 이용하면 기존에 존재하는 db 자료의 스키마와 릴레이션을 가져올 수 있다. schema를 파와서 통신하는데 필요한 type을 만들어줄 수 있다.
+
+- sqLite : db 파일 자체가 하나의 데이터베이스에 해당한다. 따라서 bun의 sqlite 연결 기능으로 connection을 맺고, `drizzle/orm` 모듈을 통해 db와 상호 작용한다.
